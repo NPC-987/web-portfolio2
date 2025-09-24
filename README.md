@@ -1,10 +1,10 @@
 # Web Portfolio 2
 
-這是一個個人作品集網站，展示了我的自我介紹、技能、專案與聯絡方式。  
+這是我第二個人作品集網站，展示了我的自我介紹、技能、專案與聯絡方式。  
 網站以 **HTML / CSS / JavaScript** 打造，搭配 Bootstrap 與 RWD 設計，支援桌面與行動裝置。
 
-## 🔗 線上瀏覽
-👉 (https://npc-987.github.io/web-portfolio2/index2.html)
+##  線上瀏覽
+👉 [點我查看作品](https://npc-987.github.io/web-portfolio2/)
 
 ---
 

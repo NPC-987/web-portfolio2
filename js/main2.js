@@ -1,7 +1,7 @@
 // --- JavaScript 功能 ---
 
 // 1. 打字機效果 (Hero Section)
-const typewriterText = "一位全端開發者";
+const typewriterText = "一位軟體工程師";
 const typewriterElement = document.querySelector('.typewriter-effect');
 let charIndex = 0;
 let isDeleting = false;
@@ -26,8 +26,15 @@ function typeWriter() {
 }
 
 // 初始設定
-typewriterElement.textContent = `你好，我是 Hau Wen`;
+typewriterElement.textContent = `你好 我是 Hau Wen`;
 setTimeout(typeWriter, 1500);
+
+//選單下拉
+const menuBtn = document.getElementById('menu-btn');
+menuBtn.addEventListener('click', () => {
+  menuBtn.classList.toggle('active');
+});
+
 
 // 2. 滾動時元素淡入動畫
 const sections = document.querySelectorAll('section:not(#hero)');
@@ -49,24 +56,6 @@ const sectionObserver = new IntersectionObserver((entries, observer) => {
 sections.forEach(section => {
     sectionObserver.observe(section);
 });
-
-// 3. 技能進度條動畫
-const skillBars = document.querySelectorAll('.progress-bar');
-const skillsSection = document.querySelector('#skills');
-
-const skillObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            skillBars.forEach(bar => {
-                const progress = bar.dataset.progress;
-                bar.style.width = `${progress}%`;
-            });
-            observer.unobserve(entry.target);
-        }
-    });
-}, { threshold: 0.5 });
-
-skillObserver.observe(skillsSection);
 
 // 4. 平滑滾動到錨點
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

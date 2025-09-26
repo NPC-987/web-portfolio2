@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/my3.css">
+    <link rel="stylesheet" href="css/my.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap"
         rel="stylesheet">
@@ -17,39 +18,63 @@
 
 <body>
 
-    <header class="main-header">
-        <div class="container">
-            <a href="#" class="logo">A wen</a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#about">關於我</a></li>
-                    <li><a href="#skills">我的技能</a></li>
-                    <li><a href="#portfolio">作品集</a></li>
-                    <li><a href="#contact">聯絡我</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="main-header ">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
+            <div class="container">
+                <div class="row w-100 align-items-center">
+                    <!-- 左 LOGO -->
+                    <div class="col-2 col-lg-2 ">
+                        <a class="logo navbar-brand fw-bold text-brown" href="#">A Wen</a>
+                    </div>
+                    <!-- 右 漢堡 -->
+                    <div class="col-10 text-end d-lg-none ">
+                        <button class="menu-btn navbar-toggler border-0" id="menu-btn" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <svg width="40" height="40" viewBox="0 0 100 100">
+                                <path class="line line1" d="M 20,29 H 80" />
+                                <path class="line line2" d="M 20,50 H 80" />
+                                <path class="line line3" d="M 20,71 H 80" />
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- 中間 / 右邊的選單 -->
+                    <div class="col-lg-10 ">
+                        <div class="collapse navbar-collapse " id="navbarNav">
+                            <ul class="navbar-nav ms-auto me-0">
+                                <li class="nav-item fs-4 fw-700 "><a class="nav-link" href="#about">關於我</a></li>
+                                <li class="nav-item fs-4 fw-700 "><a class="nav-link" href="#skills">我的技能</a></li>
+                                <li class="nav-item fs-4 fw-700"><a class="nav-link" href="#portfolio">作品集</a></li>
+                                <li class="nav-item fs-4 fw-700"><a class="nav-link" href="#contact">聯絡我</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <section id="hero" class="hero">
         <div class="hero-content">
-            <h1 class="typewriter-effect">你好，我是XXX</h1>
+            <h1 class="typewriter-effect">你好 我是XXX</h1>
             <p>一位充滿熱情的前後端初學者，致力於創造優質的網頁應用程式</p>
-            <a href="#portfolio" class="btn">查看我的作品集</a>
+
         </div>
-        <div class="scroll-down-arrow">
+        <div class="scroll-down-arrow ">
             <a href="#about">
-                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-chevron-down mx-auto"></i>
             </a>
         </div>
     </section>
 
     <section id="about" class="about-me">
-        <div class="container about-me-content">
-            <div class="about-me-image">
+        <div class="container about-me-content my-5 row">
+            <!-- 左圖 -->
+            <div class="about-me-image col-md-4 ms-md-5 mx-auto ">
                 <img src="images/me.jpg" alt="專業形象照片">
             </div>
-            <div class="about-me-text">
+            <!-- 右文 -->
+            <div class="about-me-text col-md-7 text-center text-md-start my-5">
                 <h3>關於我</h3>
                 <p>我熱愛將複雜的想法轉化為簡單、直觀的使用體驗。 <br>
                     透過全端技術的學習與實作，我能夠獨立完成網站的設計、<br>
@@ -64,6 +89,11 @@
                 <a href="#contact" class="btn">聯絡我</a>
             </div>
         </div>
+         <div class="scroll-down-arrow">
+            <a href="#skills">
+                <i class="fas fa-chevron-down text-dark"></i>
+            </a>
+        </div>
     </section>
 
     <section id="skills">
@@ -76,36 +106,24 @@
                     <p>熟悉 PHP、JavaScript 與 MySQL， <br>
                         具備撰寫 API 與設計資料庫結構的能力， <br>
                         確保應用程式在效能與安全性上都能穩定運行。</p>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar" data-progress="70"></div>
-                    </div>
                 </div>
                 <div class="skill-item">
                     <i class="fas fa-code"></i>
                     <h4>前端開發</h4>
                     <p>熟悉 HTML5、CSS3 與 JavaScript，能夠實現互動效果與響應式設計。<br>
                         注重使用者體驗，讓網頁在不同裝置上皆能維持清晰的排版與流暢的操作感受。</p>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar" data-progress="80"></div>
-                    </div>
                 </div>
                 <div class="skill-item">
                     <i class="fas fa-lightbulb"></i>
                     <h4>創意發想</h4>
                     <p>具備從零開始發想的能力，能將需求轉化為可執行的解決方案。<br>
                         善於將複雜概念拆解成直觀的設計與功能，為專案注入更多亮點與創意。</p>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar" data-progress="75"></div>
-                    </div>
                 </div>
                 <div class="skill-item">
                     <i class="fas fa-project-diagram"></i>
                     <h4>專案管理</h4>
                     <p>具備良好的溝通與協作能力，能在團隊中有效分工與整合。 <br>
                         注重時間掌控與進度追蹤，確保專案能按時完成並達到預期品質。</p>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar" data-progress="70"></div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -176,7 +194,7 @@
 
     <section id="contact">
         <div class="container">
-            <h2>聯絡我(示意用)</h2>
+            <h2>聯絡我</h2>
             <form action="#" method="POST" class="contact-form">
                 <label for="name">姓名</label>
                 <input type="text" id="name" name="name" required>
@@ -201,7 +219,7 @@
                 </a>
                 <a href="https://github.com/NPC-987" target="_blank" aria-label="GitHub"><i
                         class="fab fa-github"></i></a>
-                <a href="https://line.me/ti/p/lTTFq7jbQa" target="_blank">
+                <a href="line://ti/p/6474849404" id="line-app-link">
                     <i class="fa-brands fa-line"></i>
                 </a>
             </div>

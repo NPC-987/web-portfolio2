@@ -156,7 +156,7 @@ h2::after {
 /* --- 漢堡選單動畫 --- */
 .line {
     fill: none;
-    stroke: #ff9900;
+    stroke: var(--brown-color);
     stroke-width: 10;
     transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     stroke-linecap: round;
@@ -169,6 +169,7 @@ h2::after {
 /* --- 點擊後動畫 --- */
 .menu-btn.active .line1 {
       transform: rotate(45deg) translateY(21px);
+       stroke: #000000;
 }
 
 .menu-btn.active .line2 {
@@ -178,6 +179,7 @@ h2::after {
 
 .menu-btn.active .line3 {
    transform: rotate(-45deg) translateY(-20px);
+    stroke: #000000;
 }
 
 .menu-btn {
